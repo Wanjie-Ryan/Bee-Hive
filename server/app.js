@@ -8,7 +8,7 @@ const helmet = require('helmet')
 const cors = require('cors')
 const xss = require('xss-clean')
 const ratelimit = require('express-rate-limit')
-
+const routerupload = require('./routes/upload')
 
 
 app.set('trust proxy', 1)
@@ -25,6 +25,7 @@ app.use(express.json())
 
 
 app.use('/api/auth', registerlogin)
+app.use('/api/auth/hives', routerupload)
 
 
 const connect = async()=>{
