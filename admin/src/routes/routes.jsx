@@ -14,6 +14,8 @@ function Routes() {
 
     <Link to ='/login'>Login</Link>
 
+    <Link to ='/dashboard'>Dashboard</Link>
+
     
     
     

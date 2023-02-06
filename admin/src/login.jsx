@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {Link} from 'react-router-dom'
 
 function Login(){
 
@@ -40,7 +40,7 @@ function Login(){
                 </div>
 
                 <div className="form-footer">
-                <button type="submit">Login</button>
+                <Link to = '/dashboard'><button type="submit">Login</button></Link>
                 
                 </div>
 

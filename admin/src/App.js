@@ -1,6 +1,7 @@
 import React from 'react'
 import Register from './register.jsx'
 import Login from './login.jsx'
+import Dashboard from './uploading/dashboard.jsx'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App(){
@@ -19,7 +20,7 @@ function App(){
 
           <Route path="/login" element={<Login />} />
 
-
+          <Route path ='/dashboard' element ={<Dashboard/>}/>
           
 
         </Routes>
