@@ -35,7 +35,7 @@ const reglogSchema = new mongoose.Schema({
 
 
 
-})
+}, {timestamps:true})
 
 reglogSchema.pre('save', async function(){
 
@@ -62,7 +62,4 @@ reglogSchema.methods.comparepwd = async function(candidatepassword){
 
 
 
-
-
-
-module.exports = mongoose.model('regLog', reqlogSchema)
+module.exports = mongoose.model('regLog', reglogSchema)
